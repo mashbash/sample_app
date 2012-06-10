@@ -20,18 +20,17 @@ describe User do
 
   subject { @user }
 
-#added from listing 8.15
-  it { should respond_to(:password_confirmation) }
-  it { should respond_to(:remember_token) }
-  it { should respond_to(:authenticate) }  
+#added from listing 8.15  
 
   it { should respond_to(:name) }
   it { should respond_to(:email) }
   it { should respond_to(:password_digest) }
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
+  it { should respond_to(:remember_token) }
   it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:microposts) }
 
   it { should be_valid }
   # calls valid ? subject on test
